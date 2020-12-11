@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 en raya"
+        android:fontFamily="casual"
+        android:textSize="60dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/purple_500"/>
+
+    <!-- Boton 1 - 1  -->
+    <ImageButton
+        android:id="@+id/btnBoton1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@id/btnBoton2"
+        android:layout_below="@id/txtTitulo"
+
+        />
+    <!-- Boton 1 - 2  -->
+    <ImageButton
+        android:id="@+id/btnBoton2"
+        android:layout_below="@id/txtTitulo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        />
+    <!-- Boton 1 - 3  -->
+    <ImageButton
+        android:id="@+id/btnBoton3"
+        android:layout_toRightOf="@id/btnBoton2"
+        android:layout_below="@id/txtTitulo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        />
+
+    <!-- Boton 2 - 1  -->
+    <ImageButton
+        android:id="@+id/btnBoton4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@id/btnBoton5"
+        android:layout_below="@id/btnBoton1"
+
+        />
+    <!-- Boton 2 - 2  -->
+    <ImageButton
+        android:id="@+id/btnBoton5"
+        android:layout_below="@id/btnBoton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        />
+    <!-- Boton 2 - 3  -->
+    <ImageButton
+        android:id="@+id/btnBoton6"
+        android:layout_toRightOf="@id/btnBoton5"
+        android:layout_below="@id/btnBoton3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        />
+
+    <!-- Boton 3 - 1  -->
+    <ImageButton
+        android:id="@+id/btnBoton7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@id/btnBoton8"
+        android:layout_below="@id/btnBoton4"
+
+        />
+    <!-- Boton 3 - 2  -->
+    <ImageButton
+        android:id="@+id/btnBoton8"
+        android:layout_below="@id/btnBoton5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        />
+    <!-- Boton 3 - 3  -->
+    <ImageButton
+        android:id="@+id/btnBoton9"
+        android:layout_toRightOf="@id/btnBoton8"
+        android:layout_below="@id/btnBoton6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        />
+
+    <View
+        android:id="@+id/separador"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/btnBoton7"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        />
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_below="@id/separador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnBoton1"
+
+        >
+
+        <RadioButton
+            android:id="@+id/rbNivel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Vamo a calmarno..." />
+        <RadioButton
+            android:id="@+id/rbNivel2"
+            android:text="A tope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/btnStart"
+        android:textOn="Jugando!"
+        android:textOff="Parado"
+        android:layout_alignRight="@id/btnBoton3"
+        android:layout_below="@id/separador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imgTurn"
+        android:src="@drawable/neutroicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/btnBoton3"
+        android:layout_below="@id/btnStart"
+
+
+        />
+
+    <TextView
+        android:id="@+id/prueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prueba"
+        android:layout_alignRight="@id/btnBoton3"
+        android:layout_below="@id/imgTurn"/>
+
+
+
+
+</RelativeLayout>
